@@ -1,0 +1,60 @@
+1. 주제: 중고거래장터 판매자 구매자 매칭 (판매완료전 서로 야기 단계 커밍순)
+2. 데이터:
+ 
+ 1. 판매자 : id, 연락처,  // 품목명 (판매가격)
+ Seller 클래스
+ String id;
+ String phone;
+ String item;
+ 
+ 
+ 2. 구매자 : id, 연락처,  // 품목명 (희망가격)
+  Buyer 클래스
+  String id;
+  String phone;
+  String item;
+ 
+ 
+ 3. 품목정보: 품목명, 가격정보, 상세설명
+ Items 클래스
+ String item;
+ int price;
+ String detail;
+ 
+ 
+ 4. 거래정보: key ,판매자, 구매자, 품목정보, 거래일자
+ String tsId;
+ String date;
+ 
+ 
+3. 기능: 
+- 생성: 
+crateMaching()
+판매자 구매자 매칭(거래정보 생성)
+1. 중복 
+
+- 검색 : 
+//거래정보 검색
+readMachingAll()
+1. 전체 거래 매칭 조회
+readMachingone() 
+2. 거래매칭 하나 조회 어떤 구매자랑 매칭됬는지 
+readWrong()
+3. 잘못된정보 검색
+
+예외사항
+1.품목명검색정보없음
+2. 
+
+
+- 수정 : 
+// 거래정보 수정
+updateMaching()
+판매자 가격 수정 (거래정보 수정)
+
+1.
+
+
+- 삭제 : 
+deleteMaching()
+// 판매자 품목 삭제 (거래 삭제)
